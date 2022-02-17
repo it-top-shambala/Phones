@@ -23,3 +23,24 @@ CREATE TABLE tab_prices
         ON DELETE NO ACTION
         ON UPDATE NO ACTION                     
 );
+
+INSERT INTO tab_trademarks (name)
+VALUES ('Apple'),
+       ('Samsung'),
+       ('Xiaomi');
+
+INSERT INTO tab_phones (id_trademark, model)
+VALUES (1, 'iPhone 12'),
+       (1, 'iPhone 2'),
+       (2, 'Galaxy A50'),
+       (2, 'Galaxy A60'),
+       (3, 'Redmi 8A'),
+       (3, 'Redmi 6A');
+
+INSERT INTO tab_prices (id_phone, price)
+VALUES (1, 120000),
+       (2, 1000),
+       (3, 12000),
+       (4, 15000),
+       (5, 10000),
+       (6, 4000);
